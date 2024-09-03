@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JE Ferreteros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/build/styles.css">
+</head>
+<body class="bg-gradient-to-r from-gris-claro to-blanco font-signika">
+    <header class="py-5 bg-gris-azulado shadow-md">
+        <div class="grid place-content-center md:flex md:justify-around items-center container gap-10">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="92" height="92" viewBox="0 0 24 24" stroke-width="2" stroke="#1546c2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+                </svg>
+            </a>
+            <ul class="md:flex md:gap-12">
+                <li class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#16A085" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
+                        <path d="M10 16h6" />
+                        <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M4 8h3" />
+                        <path d="M4 12h3" />
+                        <path d="M4 16h3" />
+                    </svg>
+                    <a href="contacto.html" class="text-2xl font-bold text-azul-claro font-acme">Contacto</a>
+                </li>
+                <li class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#16A085" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                    </svg>
+                    <a href="nosotros.html" class="text-2xl text-azul-oscuro font-bold hover:text-azul-claro font-acme">Nosotros</a>
+                </li>
+                <li class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tool" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#16A085" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" />
+                    </svg>
+                    <a href="herramientas.html" class="text-2xl text-azul-oscuro font-bold hover:text-azul-claro font-acme">Herramientas</a>
+                </li>
+            </ul>
+            <a href="index.html">
+                <h1 class="text-4xl text-azul-oscuro font-acme font-extrabold">JE
+                    <span class="text-4xl font-semibold text-azul-claro">Ferreteros</span>
+                </h1>
+            </a>
+        </div>
+    </header>
+
+<main class="grid place-items-center mt-20">
+    <h3 class="text-center mb-5 font-bold text-verdoso font-mono text-4xl">Contactanos</h3>
+    <div class="w-1/2">
+            <form id="formulario"
+            class="bg-gris-azulado shadow-lg rounded-lg py-10 px-5 mb-10"
+        >
+            <div class="mb-5">
+                <label for="nombre" class="text-azul-oscuro uppercase font-bold mb-2">Nombre</label>
+                <input type="text" id="nombre" placeholder="Su nombre" 
+                class="w-full p-2 mt-2 rounded-md border-2 border-indigo-400 placeholder:text-gray-400">
+            </div>
+
+            <div class="mb-5">
+                <label for="telefono" class="text-azul-oscuro uppercase font-bold mb-2">Telefono</label>
+                <input type="tel" id="telefono" placeholder="Su telefono" 
+                class="w-full p-2 mt-2 rounded-md border-2 border-indigo-400 placeholder:text-gray-400">
+            </div>
+
+            <div class="mb-5">
+                <label for="email" class="text-azul-oscuro uppercase font-bold mb-2">Email</label>
+                <input type="email" id="email" placeholder="Su Email"
+                class="w-full p-2 mt-2 rounded-md border-2 border-indigo-400 placeholder:text-gray-400">
+            </div>
+
+            <div class="mb-5">
+                <label for="fecha" class="text-azul-oscuro uppercase font-bold mb-2">Fecha</label>
+                <input type="date" id="fecha"
+                class="w-full p-2 mt-2 rounded-md border-2 border-indigo-400 placeholder:text-gray-400">
+            </div>
+
+            <div class="mb-5">
+                <label for="mensaje" class="text-azul-oscuro uppercase font-bold mb-2">Mensaje</label>
+                <textarea id="mensaje" cols="30" rows="10" placeholder="Su Mensaje"
+                class="w-full p-2 mt-2 rounded-md border-2 border-indigo-400 placeholder:text-gray-400 h-30"></textarea>
+            </div>
+
+            <input type="submit" id="submit" value="Enviar Datos" class="bg-verdoso p-2 w-full rounded-md text-white font-extrabold font-mono cursor-pointer hover:bg-azul-claro transition-colors duration-500">
+        </form>
+    </div>
+</main>
+
+<footer class="p-8 mt-5 bg-azul-oscuro">
+    <p class="text-center text-2xl text-blanco">
+        JE Ferreteros. Todos los derechos reservados. 2023
+    </p>
+</footer>
+
+
+<script src="app.js"></script>
+</body>
+</html>
